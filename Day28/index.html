@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+      .active-pagination-btn {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <select name="status" id="status-select">
+      <option value="">Tat ca</option>
+      <option value="todo">Sap lam</option>
+      <option value="doing">Dang lam</option>
+      <option value="done">Hoan thanh</option>
+    </select>
+    <div
+      id="product-list"
+      style="display: grid; grid-template-columns: repeat(4, 1fr)"
+    ></div>
+    <div
+      id="pagination"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+      "
+    ></div>
+    <script src="./main.js"></script>
+  </body>
+</html>
